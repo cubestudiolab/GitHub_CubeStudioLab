@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ko"> 
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -236,6 +236,20 @@
         width: auto;
         margin-bottom: 2rem;
         display: block;
+      }
+      .stat-source {
+        font-size: 0.75rem;
+        color: var(--text-secondary);
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+        opacity: 0.85;
+      }
+      .stat-source a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      .stat-source a:hover {
+        text-decoration: underline;
       }
       .highlight-box {
         background: var(--bg-card);
@@ -1593,6 +1607,16 @@
             style="width: 100%; height: auto; border-radius: 12px"
             loading="lazy"
           />
+          <p class="stat-source">
+            출처: Becker's Hospital Review 등 헬스케어 연구<br />(환자의 77%가
+            병원 선택 전 온라인 검색을 수행한다고 보고)
+            <a
+              href="https://www.beckershospitalreview.com/healthcare-information-technology/how-do-patients-select-a-new-physician-77-say-online-reviews.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >↗</a
+            >
+          </p>
         </div>
         <div class="highlight-box">
           <p

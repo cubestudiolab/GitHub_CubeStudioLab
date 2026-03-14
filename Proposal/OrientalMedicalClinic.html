@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>치과 홈페이지 제안서 | CubeStudioLab</title>
+    <title>한의원 홈페이지 제안서 | CubeStudioLab</title>
     <link
       rel="icon"
       href="https://cdn.imweb.me/thumbnail/20260307/bb039f6cd58b3.png"
@@ -107,7 +107,6 @@
       .accent-sub2 {
         color: var(--accent-sub2);
       }
-      /* 제목 첫 단어/핵심어 강조 */
       .slide-title .title-accent {
         color: var(--accent);
       }
@@ -391,7 +390,6 @@
         left: 0;
         color: var(--accent-sub2);
       }
-      /* 프로세스 기본 (advantage 등 다른 곳에서 process-item 사용 시) */
       .process-item {
         display: flex;
         align-items: flex-start;
@@ -498,19 +496,12 @@
         text-decoration: none;
         transition:
           background 0.2s,
-          transform 0.2s;
-      }
-      .btn-primary:hover {
-        background: #bae6fd;
-        transform: translateY(-2px);
-      }
-      .btn-primary {
-        transition:
-          background 0.2s,
           transform 0.2s,
           box-shadow 0.2s;
       }
       .btn-primary:hover {
+        background: #bae6fd;
+        transform: translateY(-2px);
         box-shadow: 0 6px 24px rgba(125, 211, 252, 0.35);
       }
       .advantage-item:hover,
@@ -565,7 +556,6 @@
         color: var(--text-secondary);
         margin-top: 3rem;
       }
-      /* 상단 고정 영역: 모바일에서 스크롤 시에도 유지 (sticky로 iOS 호환) */
       .top-bar {
         position: sticky;
         top: 0;
@@ -578,7 +568,6 @@
         height: 4px;
         background: rgba(255, 255, 255, 0.1);
       }
-      /* 슬라이드 목차: 모바일(상단) + PC(오른쪽) */
       .slide-nav {
         position: fixed;
         top: 4px;
@@ -762,8 +751,6 @@
         width: 0%;
         transition: width 0.15s ease;
       }
-      /* ===== 슬라이드별 맞춤 이펙트 ===== */
-      /* 1. 표지: 로고 스케일 + 텍스트 부드럽게 등장 */
       .slide-cover .logo-proposal {
         opacity: 0;
         transform: scale(0.9);
@@ -806,8 +793,6 @@
         transform: translateY(0);
         transition-delay: 0.55s;
       }
-
-      /* 2. 후킹: 숫자 강조 + 이미지 줌인 */
       .slide-hook .visual-diagram img {
         opacity: 0;
         transform: scale(0.92);
@@ -832,8 +817,6 @@
         transform: scale(1) translateY(0);
         transition-delay: 0.4s;
       }
-
-      /* 3. 스토리텔링: 리스트 왼쪽에서 슬라이드 */
       .slide-story .highlight-box {
         opacity: 0;
         transform: translateX(-24px);
@@ -883,8 +866,6 @@
         transform: translateX(0);
         transition-delay: 0.9s;
       }
-
-      /* 4. 포트폴리오: 이미지 줌 + 프레임 */
       .slide-portfolio .visual-diagram {
         opacity: 0;
         transform: scale(0.96);
@@ -908,8 +889,6 @@
         opacity: 1;
         transform: scale(1);
       }
-
-      /* 5. Before/After: 좌우에서 만나기 */
       .slide-compare .compare-item.before {
         opacity: 0;
         transform: translateX(-24px);
@@ -934,8 +913,6 @@
         transform: translateX(0);
         transition-delay: 0.5s;
       }
-
-      /* 6. 장점: 카드 바운스 */
       .slide-advantage .advantage-item {
         opacity: 0;
         transform: translateY(24px) scale(0.98);
@@ -959,8 +936,6 @@
       .slide-advantage.visible .advantage-item:nth-child(4) {
         transition-delay: 0.65s;
       }
-
-      /* 7. 솔루션: 박스 확장 */
       .slide-solution .highlight-box {
         opacity: 0;
         transform: scaleY(0.95);
@@ -996,8 +971,6 @@
         transform: translateY(0);
         transition-delay: 0.64s;
       }
-
-      /* 8. 프로세스: 가운데 타임라인 + 좌우 교차 (process.html 스타일) */
       .slide-process .process-timeline {
         position: relative;
         margin: 2rem 0;
@@ -1046,7 +1019,6 @@
       .slide-process .process-item:last-of-type {
         margin-bottom: 0;
       }
-      /* 1,3,5,7: 왼쪽 | 2,4,6: 오른쪽 */
       .slide-process .process-item:nth-child(odd) .process-content {
         grid-column: 1;
         grid-row: 1;
@@ -1109,7 +1081,6 @@
         border-color: rgba(125, 211, 252, 0.4);
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
       }
-      /* 타임라인 노드 (중앙) */
       .slide-process .process-node {
         grid-column: 2;
         grid-row: 1;
@@ -1168,7 +1139,6 @@
           opacity: 1;
         }
       }
-      /* 완료 배지 */
       .slide-process .process-end {
         display: flex;
         flex-direction: column;
@@ -1212,8 +1182,6 @@
         border: 1px solid rgba(134, 239, 172, 0.4);
         border-radius: 6px;
       }
-
-      /* 9. 오퍼: 스페셜 강조 */
       .slide-offer .highlight-box {
         opacity: 0;
         transform: scale(0.97);
@@ -1229,8 +1197,6 @@
         box-shadow: 0 0 40px rgba(134, 239, 172, 0.15);
         transition-delay: 0.2s;
       }
-
-      /* 10. CTA: 버튼 강조 */
       .slide-cta .btn-primary {
         opacity: 0;
         transform: translateY(24px) scale(0.98);
@@ -1243,7 +1209,6 @@
         transform: translateY(0) scale(1);
         transition-delay: 0.5s;
       }
-
       @media (max-width: 1023px) {
         .slide:first-child {
           padding-top: 3.5rem;
@@ -1272,7 +1237,6 @@
         .process-item {
           padding: 1rem;
         }
-        /* 프로세스 타임라인 모바일: 좌측 노드 + 우측 콘텐츠 */
         .slide-process .process-timeline::before {
           left: 23px;
           margin-left: 0;
@@ -1308,7 +1272,6 @@
         .slide-process.visible .process-item:nth-child(even) .process-content {
           transform: translateX(0);
         }
-        /* CTA: 모바일에서 줄바꿈 최소화 */
         .slide-cta .cta-highlight {
           white-space: nowrap;
           font-size: clamp(0.7rem, 2.5vw, 1rem);
@@ -1476,7 +1439,6 @@
         .slide:last-child {
           page-break-after: auto;
         }
-        /* 인쇄 시 모든 애니메이션 요소 강제 표시 */
         .slide .slide-inner > *,
         .slide .visual-diagram,
         .slide .visual-diagram img,
@@ -1501,7 +1463,6 @@
           transform: none !important;
           animation: none !important;
         }
-        /* 타임라인 선: PDF 저장 시 애니메이션 미실행으로 선이 안 보이므로 강제 표시 */
         .slide-process .process-timeline::before {
           transform: scaleY(1) !important;
           animation: none !important;
@@ -1527,7 +1488,6 @@
           max-width: 100% !important;
           height: auto !important;
         }
-        /* 로고: PDF 저장 시 img 규칙으로 과도하게 커지지 않도록 크기 고정 */
         .logo-proposal {
           height: 36px !important;
           max-width: 200px !important;
@@ -1571,6 +1531,7 @@
     >
       PDF 저장하기
     </button>
+
     <!-- 1. 표지 -->
     <section class="slide slide-cover" id="slide-1">
       <div class="slide-inner">
@@ -1584,11 +1545,11 @@
             ><span class="brand-cube">CUBE</span>
             <span class="brand-studio">STUDIO</span>
             <span class="brand-lab">LAB</span></span
-          >이<br />치과 원장님께 드리는 제안
+          >이<br />한의원 원장님께 드리는 제안
         </h1>
         <p class="slide-desc">
           <span class="accent-sub1">젊은 환자들</span>이 검색할 때, 원장님
-          치과가 보이면<br />
+          한의원이 보이면<br />
           <strong class="accent-sub2">예약 문의</strong>가 달라집니다.
         </p>
       </div>
@@ -1631,12 +1592,13 @@
             <strong class="accent-sub1">온라인 검색</strong>을 합니다.
           </p>
           <p class="slide-desc">
-            홈페이지가 없거나 정보가 부족한 치과는 첫 검토 대상에서 제외됩니다.
+            홈페이지가 없거나 정보가 부족한 한의원은 첫 검토 대상에서
+            제외됩니다.
           </p>
         </div>
         <p class="slide-desc" style="font-size: clamp(1.15rem, 3vw, 1.4rem)">
           젊은 층이 <strong class="accent">"어디서 치료받지?"</strong> 검색할
-          때, 원장님 치과가 보이지 않는다면?
+          때, 원장님 한의원이 보이지 않는다면?
         </p>
       </div>
     </section>
@@ -1653,7 +1615,7 @@
             style="color: var(--text-primary); margin-bottom: 1.5rem"
           >
             좋은 진료를 제공하지만,<br />
-            젊은 환자들이 온라인에서 우리 치과를 찾지 못하고 있다
+            젊은 환자들이 온라인에서 우리 한의원을 찾지 못하고 있다
           </p>
           <ul style="list-style: none; text-align: left">
             <li
@@ -1666,7 +1628,7 @@
               <span style="position: absolute; left: 0; color: var(--accent)"
                 >1</span
               >
-              온라인에서 전문성과 신뢰를 보여주고 싶다
+              온라인에서 한의학 전문성과 신뢰를 보여주고 싶다
             </li>
             <li
               style="
@@ -1695,7 +1657,7 @@
           </ul>
         </div>
         <p class="slide-desc" style="margin-top: 1rem">
-          치과에서 원하는 <strong class="accent">목표</strong>가 저희의
+          한의원에서 원하는 <strong class="accent">목표</strong>가 저희의
           <strong class="accent">목표</strong>입니다.
         </p>
       </div>
@@ -1705,40 +1667,25 @@
     <section class="slide slide-portfolio" id="slide-portfolio">
       <div class="slide-inner">
         <h2 class="slide-title">
-          <span class="title-accent">치과</span> 홈페이지 제작 사례
+          <span class="title-accent">한의원</span> 홈페이지 제작 사례
         </h2>
         <div class="visual-diagram" style="max-width: 720px">
-          <a
-            href="https://csl-dentist-01.imweb.me/"
-            target="_blank"
-            rel="noopener"
-          >
-            <img
-              src="https://cdn.imweb.me/upload/S20260306d7e4a99dcf81a/787229a2af410.png"
-              alt="치과 홈페이지 제작 사례"
-              style="
-                width: 100%;
-                height: auto;
-                border-radius: 12px;
-                border: 1px solid var(--border);
-              "
-              loading="lazy"
-            />
-          </a>
+          <img
+            src="https://cdn.imweb.me/upload/S20260306d7e4a99dcf81a/787229a2af410.png"
+            alt="한의원 홈페이지 제작 사례"
+            style="
+              width: 100%;
+              height: auto;
+              border-radius: 12px;
+              border: 1px solid var(--border);
+            "
+            loading="lazy"
+          />
         </div>
         <p class="slide-desc" style="margin-top: 1rem">
-          <span class="accent">치과 브랜드 사이트</span> · 한 분 한 분 정성으로
-          맞이한다는 메시지를 담은 디자인
+          <span class="accent">한의원 브랜드 사이트</span> · 전통 한의학과
+          현대적 케어를 조화롭게 담은 디자인
         </p>
-        <div class="cta-buttons" style="margin-top: 1.25rem">
-          <a
-            href="https://csl-dentist-01.imweb.me/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn-primary"
-            >홈페이지 구경하기</a
-          >
-        </div>
       </div>
     </section>
 
@@ -1765,8 +1712,8 @@
           <div class="compare-item before">
             <h4>현재 상황</h4>
             <ul>
-              <li>검색해도 치과가 잘 안 나옴</li>
-              <li>젊은 환자들이 치과를 모름</li>
+              <li>검색해도 한의원이 잘 안 나옴</li>
+              <li>젊은 환자들이 한의원을 모름</li>
               <li>전화·방문 위주로만 예약</li>
               <li>월 예약 문의 <span class="accent">5~10건</span></li>
             </ul>
@@ -1822,9 +1769,10 @@
           <div class="advantage-item">
             <span class="icon">✓</span>
             <div>
-              <h4>치과·의료 특화 구조</h4>
+              <h4>한의원·의료 특화 구조</h4>
               <p>
-                진료과·예약·오시는 길 등 필수 메뉴 반영, 네이버 예약 연동 가능
+                진료과·치료 프로그램·예약·오시는 길 등 필수 메뉴 반영, 네이버
+                예약 연동 가능
               </p>
             </div>
           </div>
@@ -1891,7 +1839,7 @@
               <span class="process-duration">1~2일</span>
             </div>
             <div class="process-content">
-              <strong class="accent">전략 미팅</strong> → 치과 목표·타겟 환자
+              <strong class="accent">전략 미팅</strong> → 한의원 목표·타겟 환자
               분석 (온라인 상담으로 대체가능)
             </div>
           </div>
@@ -1901,8 +1849,8 @@
               <span class="process-duration">2~3일</span>
             </div>
             <div class="process-content">
-              <strong class="accent">콘텐츠 기획</strong> → 진료과·메뉴 구조
-              설계
+              <strong class="accent">콘텐츠 기획</strong> → 진료과·치료
+              프로그램·메뉴 구조 설계
             </div>
           </div>
           <div class="process-item">
@@ -2043,16 +1991,17 @@
           저희와 함께 하지 않아도 괜찮습니다.
         </p>
         <p class="slide-desc cta-highlight" style="margin-top: 1rem">
-          지금 전화 한 통이 <strong class="accent-sub2">3개월 후</strong> 치과의
-          예약을 바꿀 수 있습니다.
+          지금 전화 한 통이
+          <strong class="accent-sub2">3개월 후</strong> 한의원의 예약을 바꿀 수
+          있습니다.
         </p>
         <div class="cta-buttons">
           <a href="../../contact.html" class="btn-primary">무료 상담 요청</a>
         </div>
         <div class="cta-contact-links">
-          <a href="mailto:cubestudiolab@gmail.com" class="cta-contact-link"
-            ><span class="cta-contact-link-icon" aria-hidden="true"
-              ><svg
+          <a href="mailto:cubestudiolab@gmail.com" class="cta-contact-link">
+            <span class="cta-contact-link-icon" aria-hidden="true">
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
                 height="18"
@@ -2064,19 +2013,20 @@
                 stroke-linejoin="round"
               >
                 <rect x="2" y="4" width="20" height="16" rx="2" />
-                <path
-                  d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
-                /></svg></span
-            ><span class="email-full">cubestudiolab@gmail.com</span
-            ><span class="email-short">이메일</span></a
-          >
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+            </span>
+            <span class="email-full">cubestudiolab@gmail.com</span>
+            <span class="email-short">이메일</span>
+          </a>
           <a
             href="https://naver.me/5HyDTm67"
             class="cta-contact-link"
             target="_blank"
             rel="noopener noreferrer"
-            ><span class="cta-contact-link-icon" aria-hidden="true"
-              ><svg
+          >
+            <span class="cta-contact-link-icon" aria-hidden="true">
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
                 height="18"
@@ -2087,16 +2037,19 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               >
-                <path d="M7 4v16M7 4l10 16M17 20V4" /></svg></span
-            >네이버</a
-          >
+                <path d="M7 4v16M7 4l10 16M17 20V4" />
+              </svg>
+            </span>
+            네이버
+          </a>
           <a
             href="https://pf.kakao.com/_chxiqX"
             class="cta-contact-link"
             target="_blank"
             rel="noopener noreferrer"
-            ><span class="cta-contact-link-icon" aria-hidden="true"
-              ><svg
+          >
+            <span class="cta-contact-link-icon" aria-hidden="true">
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
                 height="18"
@@ -2112,16 +2065,19 @@
                 />
                 <path
                   d="M12 18.75c-.591 0-1.17-.041-1.732-.12-.562.396-3.813 2.679-4.12 2.722 0 0-.125.049-.232-.014s-.088-.229-.088-.229c.032-.22.843-3.018.992-3.533-2.745-1.36-4.57-3.769-4.57-6.513 0-4.246 4.365-7.688 9.75-7.688s9.75 3.442 9.75 7.688c0 4.245-4.365 7.687-9.75 7.687z"
-                /></svg></span
-            >카카오톡</a
-          >
+                />
+              </svg>
+            </span>
+            카카오톡
+          </a>
           <a
             href="https://www.instagram.com/cube_studio_lab/"
             class="cta-contact-link"
             target="_blank"
             rel="noopener noreferrer"
-            ><span class="cta-contact-link-icon" aria-hidden="true"
-              ><svg
+          >
+            <span class="cta-contact-link-icon" aria-hidden="true">
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
                 height="18"
@@ -2134,9 +2090,11 @@
               >
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg></span
-            >인스타그램</a
-          >
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </span>
+            인스타그램
+          </a>
         </div>
         <p class="footer-note">
           <span class="brand-text"
@@ -2153,7 +2111,6 @@
         const slides = document.querySelectorAll(".slide");
         const navContainer = document.getElementById("slideNavLinks");
 
-        // 슬라이드 목차: slide-title에서 동적으로 생성
         if (navContainer) {
           slides.forEach((slide, i) => {
             const titleEl = slide.querySelector(".slide-title");
@@ -2196,7 +2153,6 @@
             (h > 0 ? (window.scrollY / h) * 100 : 0) + "%";
         });
 
-        // 슬라이드 목차: 현재 슬라이드 하이라이트 + 모바일 현재 표시 + 드래그 시 활성 링크로 스크롤
         const navLinks = document.querySelectorAll(".slide-nav-link");
         const navCurrentEl = document.getElementById("slideNavCurrent");
         const navLinksEl = document.getElementById("slideNavLinks");
@@ -2235,7 +2191,6 @@
         );
         slides.forEach((el) => navObserver.observe(el));
 
-        // 목차 클릭 시 해당 슬라이드로 스크롤
         navLinks.forEach((link) => {
           link.addEventListener("click", (e) => {
             e.preventDefault();
@@ -2244,7 +2199,6 @@
           });
         });
 
-        // PDF 저장하기: 인쇄 대화상자 (PDF로 저장 선택 가능)
         const btnPdfNav = document.getElementById("btnPdfNav");
         const btnPdfFloat = document.getElementById("btnPdfFloat");
         const doPrint = async () => {
